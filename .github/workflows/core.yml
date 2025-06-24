@@ -54,10 +54,10 @@ jobs:
           python-version: pypy-3.10
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Setup GraalPy
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: graalpy # or graalpy24.2 to pin a version
     - name: Install test requirements
       run: python3 ./devscripts/install_deps.py --include test --include curl-cffi
     - name: Run tests

@@ -13,7 +13,7 @@ jobs:
     - name: Setup GraalPy
       uses: actions/setup-python@v5
       with:
-        python-version: graalpy # or graalpy24.2 to pin a version
+        python-version: graalpy24.2 # or graalpy24.2 to pin a version
     - name: Install test requirements
       run: python3 ./devscripts/install_deps.py -o --include test
     - name: Run tests
@@ -30,7 +30,7 @@ jobs:
     - name: Setup GraalPy
       uses: actions/setup-python@v5
       with:
-        python-version: graalpy # or graalpy24.2 to pin a version
+        python-version: graalpy24.2 # or graalpy24.2 to pin a version
     - name: Install dev dependencies
       run: python3 ./devscripts/install_deps.py -o --include static-analysis
     - name: Make lazy extractors

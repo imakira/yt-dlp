@@ -57,7 +57,7 @@ jobs:
     - name: Setup GraalPy
       uses: actions/setup-python@v5
       with:
-        python-version: graalpy # or graalpy24.2 to pin a version
+        python-version: graalpy24.2 # or graalpy24.2 to pin a version
     - name: Install test requirements
       run: python3 ./devscripts/install_deps.py --include test --include curl-cffi
     - name: Run tests

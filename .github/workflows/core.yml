@@ -20,6 +20,8 @@ on:
       - yt_dlp/extractor/__init__.py
       - yt_dlp/extractor/common.py
       - yt_dlp/extractor/extractors.py
+  workflow_dispatch:
+  
 permissions:
   contents: read
 
